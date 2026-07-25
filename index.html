@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="planner-box">
+
+    <h1 class="main-heading">Daily Task Manager</h1>
+
+    <div class="entry-box">
+      <input type="text" id="taskInput" class="task-input" placeholder="Enter new item here...">
+      <button class="add-button" onclick="addTask()">Save Task</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <div class="boards-wrapper">
+
+      <div class="board-column">
+        <h2 class="board-title">In Progress</h2>
+        <div id="pendingList" class="task-list">
+          <p class="empty-text">Your active list is clear!</p>
+        </div>
+      </div>
+
+      <div class="board-column">
+        <h2 class="board-title">Finished</h2>
+        <div id="completedList" class="task-list">
+          <p class="empty-text">Nothing finished yet.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
